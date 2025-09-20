@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود و ثبت‌نام | مدیریت فیلترشکن</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>به سیستم مدیریت فیلترشکن خوش آمدید</h1>
+
+        <div class="card">
+            <h2>ورود ادمین</h2>
+            <form id="admin-login-form">
+                <div class="form-group">
+                    <label for="admin-password">رمز عبور ادمین:</label>
+                    <input type="password" id="admin-password" name="password" required>
+                </div>
+                <button type="submit">ورود به عنوان ادمین</button>
+                <p id="admin-login-message" class="error-message"></p>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>ورود کاربر</h2>
+            <form id="user-login-form">
+                <div class="form-group">
+                    <label for="user-username-login">نام کاربری:</label>
+                    <input type="text" id="user-username-login" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-password-login">رمز عبور:</label>
+                    <input type="password" id="user-password-login" name="password" required>
+                </div>
+                <button type="submit">ورود به حساب کاربری</button>
+                <p id="user-login-message" class="error-message"></p>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>ثبت‌نام کاربر جدید</h2>
+            <form id="user-register-form">
+                <div class="form-group">
+                    <label for="user-username-register">نام کاربری:</label>
+                    <input type="text" id="user-username-register" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-password-register">رمز عبور:</label>
+                    <input type="password" id="user-password-register" name="password" required>
+                </div>
+                <button type="submit">ثبت‌نام</button>
+                <p id="user-register-message" class="success-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

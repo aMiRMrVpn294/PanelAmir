@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل مدیریت | مدیریت فیلترشکن</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>پنل مدیریت</h1>
+        <p>به پنل مدیریت خوش آمدید!</p>
+        <button id="logout-button" class="logout-button">خروج</button>
+
+        <div class="card">
+            <h2>اضافه کردن کانفیگ جدید</h2>
+            <form id="add-config-form">
+                <div class="form-group">
+                    <label for="config-name">نام کانفیگ:</label>
+                    <input type="text" id="config-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="config-link">لینک یا کانفیگ:</label>
+                    <textarea id="config-link" name="link" rows="5" required></textarea>
+                </div>
+                <button type="submit">افزودن کانفیگ</button>
+                <p id="add-config-message" class="success-message"></p>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>کانفیگ‌های موجود</h2>
+            <ul id="admin-config-list" class="config-list">
+                <!-- کانفیگ‌ها اینجا توسط جاوااسکریپت بارگذاری می‌شوند -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
